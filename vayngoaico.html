@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css\csshome.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js\jshome.js"></script>
+</head>
+<body>
+	<header class="col-md-12 logo">
+		<div class="row">
+			<div class="col-1"></div>
+			<div style="padding-left: 0px;padding-right: 0px;" class="col-2 slt">
+				<select class="slt_logo" >
+					<option value="1" selected="selected">NGÔN NGỮ</option>
+					<option value="2">Tiếng Việt</option>
+					<option value="3">English</option>
+				</select>
+				<select class="slt_logo">
+					<option value="1" selected="selected">TIỀN TỆ</option>
+					<option value="2">VND</option>
+					<option value="3">USD</option>
+				</select>
+			</div>
+			<div class="col-6"><center><img class="logo_home" src="photo\logo.png"></center></div>
+			<div class="col-2 top_icon" style="padding: 0px;">
+				<i class="fas fa-search"></i>
+				<i class="far fa-user top_icon_clien"></i>
+				<i class="fas fa-shopping-cart top_icon_clien"></i>
+			</div>
+
+		</div>
+
+	</header>
+	<nav class="col-md-12 menu">
+		<nav class="row">
+			<div class="col-3" style="height: 10px;"></div>
+			<div class="col-7 list_menu" style="padding-left: 0px;padding-right: 0px;">
+				<div class="li_list_menu">
+					<center><a href="home.html" class="a_list_menu">TRANG CHỦ</a></center>
+				</div>
+				<div  class="li_list_menu" style="height: 55px;">
+					<center>
+						<a style="width: 100%;height: 100%;" id="it_1" class="a_list_menu" href="sanpham.html">SẢN PHẨM<i class="fas fa-angle-down angle_down"></i></a>
+					</center>
+				</div>
+				<div  class="li_list_menu"  onmousemove="show2()" onmouseout="notshow2()" style="height: 55px;">
+					<center>
+						<a id="it_2" class="a_list_menu" href="lookbook.html">LOOKBOOK<i class="fas fa-angle-down angle_down"></i></a>
+					</center>
+				</div>
+				<div style="width: 13%;" class="li_list_menu">
+					<center>
+						<a href="##" class="a_list_menu">DỊCH VỤ</a>
+					</center>
+				</div>
+				<div style="width: 13%;" class="li_list_menu">
+					<center>
+						<a href="blog.html" class="a_list_menu">BLOG</a>
+					</center>
+				</div>
+				<div style="width: 13%;" class="li_list_menu">
+					<center>
+						<a href="lienhe.html" class="a_list_menu">LIÊN HỆ</a>
+					</center>
+				</div>
+			</div>
+			<div class="col-md-9 list_menu_clien2" id="menu_c22">
+				<div class="row">
+					<div class="col-5"></div>
+					<div class="col-2" style="background: #ffffff63; padding-bottom: 20px;" onmousemove="show2()" onmouseout="notshow2()">
+						<strong>ONCE IN AWHITE</strong><br>
+						<a class="text_list_menu_clien_sp" href="winter2018.html">WINTER 2018</a><br>
+						<a class="text_list_menu_clien_sp" href="##">FALL 2018</a><br>
+						<a class="text_list_menu_clien_sp" href="##">SUMMER 2018</a><br>
+						<a class="text_list_menu_clien_sp" href="##">SPRING 2018</a><br>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</nav>
+	<section>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" style="padding: 0px;">
+					<div class="row">
+						<div class="col-3 sp_li_menu">
+							<h5 style="margin-bottom:0px;color: yellow" id="sp_h4_menu1" onclick="sp_click_menu1()" >VÁY CÔ DÂU</h5>
+							<div id="sp_hr_menu1" style="border-top: 2px solid black;"></div>
+							<ul style="display: inline-block;" class="sp_ul_menu" id="sp_ul_menu1">
+								<li class="sp_li_menu"><a href="vayngoaico.html">Váy ngoại cỡ</a></li>
+								<li class="sp_li_menu">Váy ngắn</li>
+								<li class="sp_li_menu">Váy dài</li>
+								<li class="sp_li_menu">Váy chân A</li>
+								<li class="sp_li_menu">Váy trumpet</li>
+								<li class="sp_li_menu">Váy ren</li>
+							</ul>
+							<hr style="margin-top:5px;margin-bottom:5px;">
+							<h5 style="margin-bottom:0px;"  id="sp_h4_menu2" onclick="sp_click_menu2()">VÁY PHÙ DÂU</h5>
+							<div id="sp_hr_menu2" style="border-top: 2px solid black; display:none;"></div>
+							<ul style="display: none;" class="sp_ul_menu" id="sp_ul_menu2">
+								<li class="sp_li_menu">Váy Ngoại cỡ</li>
+								<li class="sp_li_menu">Vày ngắn</li>
+								<li class="sp_li_menu">Váy dài</li>
+								<li class="sp_li_menu">Màu sắc</li>
+							</ul>
+							<hr style="margin-top:5px;margin-bottom:5px;">
+							<h5 style="margin-bottom:0px;" id="sp_h4_menu3" onclick="sp_click_menu3()">VÁY THƯỜNG</h5>
+							<div id="sp_hr_menu3" style="border-top: 2px solid black; display:none;"></div>
+							<ul style="display: none;" class="sp_ul_menu" id="sp_ul_menu3">
+								<li class="sp_li_menu">Váy Ngoại cỡ</li>
+								<li class="sp_li_menu">Vày ngắn</li>
+								<li class="sp_li_menu">Váy dài</li>
+								<li class="sp_li_menu">Màu sắc</li>
+							</ul>
+							<hr style="margin-top:5px;margin-bottom:5px;">
+							<h5 style="margin-bottom:0px;" id="sp_h4_menu4" onclick="sp_click_menu4()">GIÀY</h5>
+								<div id="sp_hr_menu4" style="border-top: 2px solid black; display:none;"></div>
+							<ul style="display: none;" class="sp_ul_menu" id="sp_ul_menu4">
+								<li class="sp_li_menu">Giày cô dâu</li>
+								<li class="sp_li_menu">Sandals</li>
+								<li class="sp_li_menu">Giày cao</li>
+							</ul>
+							<hr style="margin-top:5px;margin-bottom:5px;">
+							<h5 style="margin-bottom:0px;"  id="sp_h4_menu5" onclick="sp_click_menu5()">PHỤ KIỆN</h5>
+							<div id="sp_hr_menu5" style="border-top: 2px solid black; display:none;"></div>
+							<ul style="display: none;" class="sp_ul_menu" id="sp_ul_menu5">
+								<li class="sp_li_menu">Trang sức</li>
+								<li class="sp_li_menu">Mạng che</li>
+								<li class="sp_li_menu">Hoa</li>
+								<li class="sp_li_menu">Cài tóc</li>
+							</ul>
+							<hr style="margin-top:5px;margin-bottom:5px;">
+						</div>
+						<div class="col-9" style="padding-left: 0px;padding-right: 0px;">
+							<div style="width: 100%;overflow: hidden;height: 50px;padding-right: 15px;">
+								<select class="sp_lc">
+								<option>Cao - thấp<i class="fas fa-angle-down angle_down"></option>
+								<option>Thấp - Cao<i class="fas fa-angle-down angle_down"></option>
+								<option>Mới nhất<i class="fas fa-angle-down angle_down"></option>
+								<option>Yêu thích<i class="fas fa-angle-down angle_down"></option>
+							</select>
+							</div>
+							<div class="col-4" style="padding-left: 0px;float: left;overflow: hidden;height: 350px;">
+								<a style="color: black" href="sp1.html">
+									<img style="width: 100%;height: 85%;" src="photo\grid\product\slide1.jpg">
+								
+								<div style="overflow: hidden;margin-right: 0px;" class="sp_p_text_money">
+									<span style="float: left;"><strong>BRIDES</strong></span>
+									<span style="float: right;">18.000.000</span><br><span style="float: right;">VND</span>
+								</div>
+								<i class="fas fa-heart" style="float: right;position: relative;right: 10px;top: -335px;z-index: 2;color: white"></i>
+								</a>
+							</div>
+							<div class="col-4" style="padding-left: 0px;float: left;overflow: hidden;height: 350px;">
+								<a style="color: black" href="sp2.html">
+									<img style="width: 100%;height: 85%;" src="photo\grid\product\slide2.jpg">
+								
+								<div style="overflow: hidden;margin-right: 0px;" class="sp_p_text_money">
+									<span style="float: left;"><strong>BRIDES</strong></span>
+									<span style="float: right;">10.000.000</span><br><span style="float: right;">VND</span>
+								</div>
+								<i class="fas fa-heart" style="float: right;position: relative;right: 10px;top: -335px;z-index: 2;color: white"></i>
+								</a>
+							</div>
+							<div class="col-4" style="padding-left: 0px;float: left;overflow: hidden;height: 350px;">
+								<a style="color: black" href="sp3.html">
+									<img style="width: 100%;height: 85%;" src="photo\grid\product\slide3.jpg">
+								
+								<div style="overflow: hidden;margin-right: 0px;" class="sp_p_text_money">
+									<span style="float: left;"><strong>BRIDES</strong></span>
+									<span style="float: right;">8.000.000</span><br><span style="float: right;">VND</span>
+								</div>
+								<i class="fas fa-heart" style="float: right;position: relative;right: 10px;top: -335px;z-index: 2;color: white"></i>
+								</a>
+							</div>
+							<div class="col-4" style="padding-left: 0px;float: left;overflow: hidden;height: 350px;">
+								<a style="color: black" href="sp1.html">
+									<img style="width: 100%;height: 85%;" src="photo\grid\product\slide1.jpg">
+								
+								<div style="overflow: hidden;margin-right: 0px;" class="sp_p_text_money">
+									<span style="float: left;"><strong>BRIDES</strong></span>
+									<span style="float: right;">18.000.000</span><br><span style="float: right;">VND</span>
+								</div>
+								<i class="fas fa-heart" style="float: right;position: relative;right: 10px;top: -335px;z-index: 2;color: white"></i>
+								</a>
+							</div>
+							<div class="col-4" style="padding-left: 0px;float: left;overflow: hidden;height: 350px;">
+								<a style="color: black" href="sp2.html">
+									<img style="width: 100%;height: 85%;" src="photo\grid\product\slide2.jpg">
+								
+								<div style="overflow: hidden;margin-right: 0px;" class="sp_p_text_money">
+									<span style="float: left;"><strong>BRIDES</strong></span>
+									<span style="float: right;">10.000.000</span><br><span style="float: right;">VND</span>
+								</div>
+								<i class="fas fa-heart" style="float: right;position: relative;right: 10px;top: -335px;z-index: 2;color: white"></i>
+								</a>
+							</div>
+							<div class="col-4" style="padding-left: 0px;float: left;overflow: hidden;height: 350px;">
+								<a style="color: black" href="sp3.html">
+									<img style="width: 100%;height: 85%;" src="photo\grid\product\slide3.jpg">
+								
+								<div style="overflow: hidden;margin-right: 0px;" class="sp_p_text_money">
+									<span style="float: left;"><strong>BRIDES</strong></span>
+									<span style="float: right;">8.000.000</span><br><span style="float: right;">VND</span>
+								</div>
+								<i class="fas fa-heart" style="float: right;position: relative;right: 10px;top: -335px;z-index: 2;color: white"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2"></div>
+						<div class="col-8"><hr></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="mid_text">
+							<h2>LOOKBOOK</h2>
+							<h4>XUÂN 2019</h4>
+							<p>
+								Loren ipsum dolor sit amet, consectetuer adpiscing elit, sed diam, loren dolor sit amet, consec-tetuer adiscing elit, sed diam.
+							</p>
+							<div style="width: 100px;border-top:1px solid black; float: left;position: relative;top: 10px;"></div>
+							<a href="##">XEM THÊM</a>
+						</div>
+						<div class="mid_img" style="margin: 0px">
+							<img style="width: 100%;position: relative; height: 100%;" src="photo\grid\mid2.jpg">
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12" style="background: #dbb971; padding-bottom: 30px;">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" style="padding: 0px;">
+					<div class="mid_img">
+						<img style="width: 100%;position: relative; height: 100%;" src="photo\grid\mid1.jpg">
+						</div>
+						<div class="mid_text">
+							<h2>THIẾT KẾ</h2>
+							<h4> DÀNH RIÊNG CHO BẠN</h4>
+							<p>
+								chúng tôi biết việc tạo mẫu có thể là một thách thức, nhưng chúng tôi sẵn sàng giúp bạn trở thành duy nhất.
+							</p>
+							<div style="width: 100px;border-top:1px solid black; float: left;position: relative;top: 10px;"></div>
+							<a href="##">BẮT ĐẦU</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="left_ft">
+						<img width="40%" src="photo\logo.png">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aloquam erat volutpat ex ea commodu consequat. Duis autem vel eum.</p>						
+					</div>
+					<div class="right_ft">
+						<div style="width: 50%; margin: 0px; border: 0px;float: left;">
+							<h5 style="text-align: center;">LIÊN HỆ VỚI CHÚNG TÔI</h5>
+							<p>
+								loren ipsum dolor sit amet, consectetuer adipiscing elit,sed
+							</p>
+							<center>
+								<a href="##" style="padding-top: 5px;margin-left: 15px; width: 40px; height: 40px;border: 1px solid black;display: inline-block;"><i class="fab icon_ft fa-facebook-f"></i></a>
+								<a href="##" style="padding-top: 5px;margin-left: 15px; width: 40px; height: 40px;border: 1px solid black;display: inline-block;"><i class="fab icon_ft fa-twitter"></i></a>
+								<a href="##" style="padding-top: 5px;margin-left: 15px; width: 40px; height: 40px;border: 1px solid black;display: inline-block;"><i class="fab icon_ft fa-google-plus-g"></i></a>
+							</center>
+						</div>
+						<div style="width: 50%; margin: 0px; border: 0px;float: left;padding-left: 40px;">
+							<h5 style="text-align: center;">ĐỊA CHỈ</h5>
+							<p><i class="fas fa-map-marker-alt"></i> số 4B, ngõ 32/2 Đường Bưởi, Ngọc Khánh, Ba Đình, Hà Nội</p>
+							<p><i class="fas fa-phone"></i>0989324948</p>
+							<p><i class="fas fa-envelope"></i>Callabridal@email.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css\csshome.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js\jshome.js"></script>
+</head>
+<body>
+	<header class="col-md-12 logo">
+		<div class="row">
+			<div class="col-1"></div>
+			<div style="padding-left: 0px;padding-right: 0px;" class="col-2 slt">
+				<select class="slt_logo" >
+					<option value="1" selected="selected">NGÔN NGỮ</option>
+					<option value="2">Tiếng Việt</option>
+					<option value="3">English</option>
+				</select>
+				<select class="slt_logo">
+					<option value="1" selected="selected">TIỀN TỆ</option>
+					<option value="2">VND</option>
+					<option value="3">USD</option>
+				</select>
+			</div>
+			<div class="col-6"><center><img class="logo_home" src="photo\logo.png"></center></div>
+			<div class="col-2 top_icon" style="padding: 0px;">
+				<i class="fas fa-search"></i>
+				<i class="far fa-user top_icon_clien"></i>
+				<i class="fas fa-shopping-cart top_icon_clien"></i>
+			</div>
+
+		</div>
+
+	</header>
+	<nav class="col-md-12 menu">
+		<nav class="row">
+			<div class="col-3" style="height: 10px;"></div>
+			<div class="col-7 list_menu" style="padding-left: 0px;padding-right: 0px;">
+				<div class="li_list_menu">
+					<center><a href="home.html" class="a_list_menu">TRANG CHỦ</a></center>
+				</div>
+				<div  class="li_list_menu"  onmousemove="show1()" onmouseout="notshow1()" style="height: 55px;">
+					<center>
+						<a style="width: 100%;height: 100%;" id="it_1" class="a_list_menu" href="sanpham.html">SẢN PHẨM<i class="fas fa-angle-down angle_down"></i></a>
+					</center>
+				</div>
+				<div  class="li_list_menu"  onmousemove="show2()" onmouseout="notshow2()" style="height: 55px;">
+					<center>
+						<a id="it_2" class="a_list_menu" href="lookbook.html">LOOKBOOK<i class="fas fa-angle-down angle_down"></i></a>
+					</center>
+				</div>
+				<div style="width: 13%;" class="li_list_menu">
+					<center>
+						<a href="##" class="a_list_menu">DỊCH VỤ</a>
+					</center>
+				</div>
+				<div style="width: 13%;" class="li_list_menu">
+					<center>
+						<a href="blog.html" class="a_list_menu">BLOG</a>
+					</center>
+				</div>
+				<div style="width: 13%;" class="li_list_menu">
+					<center>
+						<a href="lienhe.html" class="a_list_menu">LIÊN HỆ</a>
+					</center>
+				</div>
+			</div>
+			<div class="col-md-11 list_menu_clien1" id="menu_c21">
+				<div class="row">
+					<div class="col-2"></div>
+						<div class="col-7" style="background: #ffffff63; padding-bottom: 20px;" onmousemove="show1()" onmouseout="notshow1()">
+							<div  class="list_menu_clien_sp">
+								<h3>VÁY CÔ DÂU</h3>
+								<hr class="hr_list_menu_clien_sp">
+								<a href="vayngoaico.html" class="text_list_menu_clien_sp">Váy ngoại cỡ</a> <br>
+								<a href="##" class="text_list_menu_clien_sp">Váy ngắn</a> <br>
+								<a href="##" class="text_list_menu_clien_sp">Váy dài</a> <br>
+								<a href="##" class="text_list_menu_clien_sp">Váy chân A</a> <br>
+								<a href="##" class="text_list_menu_clien_sp">Váy trumpet</a> <br>
+								<a href="##" class="text_list_menu_clien_sp">váy ren</a> <br>
+							</div>
+							<div class="list_menu_clien_sp">
+									<h3>VÁY PHÙ DÂU</h3>
+									<hr class="hr_list_menu_clien_sp">
+									<a class="text_list_menu_clien_sp" href="##">Váy ngoại cỡ</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Váy ngắn</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Váy dài</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Màu sắc</a><br>	
+							</div>
+							<div class="list_menu_clien_sp">
+								<h3>VÁY THƯỜNG</h3>
+									<hr class="hr_list_menu_clien_sp">
+									<a class="text_list_menu_clien_sp" href="##">Váy ngoại cỡ</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Váy ngắn</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Váy dài</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Màu sắc</a><br>
+							</div>
+							<div class="list_menu_clien_sp">
+								<h3>PHỤ KIỆN</h3>
+									<hr class="hr_list_menu_clien_sp">
+									<a class="text_list_menu_clien_sp" href="##">Trang sức</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Mạng che</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Hoa</a><br>
+									<a class="text_list_menu_clien_sp" href="##">cài tóc</a><br>	
+								<h3>Giày</h3>
+									<hr class="hr_list_menu_clien_sp">
+									<a class="text_list_menu_clien_sp" href="##">Giày cô dâu</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Sandals</a><br>
+									<a class="text_list_menu_clien_sp" href="##">Giày cao</a><br>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="col-md-9 list_menu_clien2" id="menu_c22">
+				<div class="row">
+					<div class="col-5"></div>
+					<div class="col-2" style="background: #ffffff63; padding-bottom: 20px;" onmousemove="show2()" onmouseout="notshow2()">
+						<strong>ONCE IN AWHITE</strong><br>
+						<a class="text_list_menu_clien_sp" href="winter2018.html">WINTER 2018</a><br>
+						<a class="text_list_menu_clien_sp" href="##">FALL 2018</a><br>
+						<a class="text_list_menu_clien_sp" href="##">SUMMER 2018</a><br>
+						<a class="text_list_menu_clien_sp" href="##">SPRING 2018</a><br>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</nav>
+	<section>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8"><h5>CHI NHÁNH CỦA CALLA</h5></div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="row">
+						<div class="col-3">
+							<a href="##" style="color: black;text-decoration: none;" id="lh_dc1">Chi nhánh 1</a><br>
+							<a href="##" style="color: black;text-decoration: none;" id="lh_dc2">Chi nhánh 2</a><br>
+							<a href="##" style="color: black;text-decoration: none;" id="lh_dc3">Chi nhánh 3</a>
+						</div>
+						<div class="col-9">
+							<h5>CHI NHÁNH 1</h5>
+							<p><strong>HOTLINE</strong>:0922324948</p>
+							<img width="100%" src="photo\grid\product\map.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="left_ft">
+						<img width="40%" src="photo\logo.png">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aloquam erat volutpat ex ea commodu consequat. Duis autem vel eum.</p>						
+					</div>
+					<div class="right_ft">
+						<div style="width: 50%; margin: 0px; border: 0px;float: left;">
+							<h5 style="text-align: center;">LIÊN HỆ VỚI CHÚNG TÔI</h5>
+							<p>
+								loren ipsum dolor sit amet, consectetuer adipiscing elit,sed
+							</p>
+							<center>
+								<a href="##" style="padding-top: 5px;margin-left: 15px; width: 40px; height: 40px;border: 1px solid black;display: inline-block;"><i class="fab icon_ft fa-facebook-f"></i></a>
+								<a href="##" style="padding-top: 5px;margin-left: 15px; width: 40px; height: 40px;border: 1px solid black;display: inline-block;"><i class="fab icon_ft fa-twitter"></i></a>
+								<a href="##" style="padding-top: 5px;margin-left: 15px; width: 40px; height: 40px;border: 1px solid black;display: inline-block;"><i class="fab icon_ft fa-google-plus-g"></i></a>
+							</center>
+						</div>
+						<div style="width: 50%; margin: 0px; border: 0px;float: left;padding-left: 40px;">
+							<h5 style="text-align: center;">ĐỊA CHỈ</h5>
+							<p><i class="fas fa-map-marker-alt"></i> số 4B, ngõ 32/2 Đường Bưởi, Ngọc Khánh, Ba Đình, Hà Nội</p>
+							<p><i class="fas fa-phone"></i>0989324948</p>
+							<p><i class="fas fa-envelope"></i>Callabridal@email.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
